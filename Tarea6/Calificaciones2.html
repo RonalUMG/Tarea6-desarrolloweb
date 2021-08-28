@@ -1,0 +1,81 @@
+<html>
+
+    <head>
+        <title>Notas</title>
+     </head>
+     <body>
+        <div>
+
+        <h2> <p> Nota: 0 - 10</p> </h2>
+        <h2> <p class="Nota1">Nota: 11 - 20</p> </h2>
+        <h2 class="Nota2">Nota: +21 </h2>
+
+        <button onclick="myFunction()">Validar</button> <!––boton de validar los colores––>
+        
+    </div>
+    <script type = "text/javascript"> //Codigo JavaScript
+
+// Object Destructuring en Javascript
+
+//Curso 1: Desarrollo Web
+
+var Desarrollo_web = {
+nombre1: 'Juan',
+nombre2: 'Maria',
+nombre3: 'Carlos',
+nombre4: 'Karla', 
+nota1: 10,
+nota2: 30,
+nota3: 20,
+nota4: 40
+};
+
+//Template String
+
+function printDetails ({nombre1,nombre2,nombre3,nombre4,nota1,nota2,nota3,nota4}){
+    console.log(`El alumno es ${nombre1} y su nota es ${nota1}`);
+    console.log(`El alumno es ${nombre2} y su nota es ${nota2}`);
+    console.log(`El alumno es ${nombre3} y su nota es ${nota3}`);
+    console.log(`El alumno es ${nombre4} y su nota es ${nota4}`); 
+}
+printDetails(Desarrollo_web);
+
+// Object Destructuring en Javascript
+
+//Curso 2: Programacion 2
+
+var programacion2 = {
+nombre1: 'Lili',
+nombre2: 'Cleo',
+nombre3: 'Pedro',
+nombre4: 'Marco', 
+nota1: 30,
+nota2: 40,
+nota3: 33,
+nota4: 21
+};
+
+//Template String
+
+function printDetails ({nombre1,nombre2,nombre3,nombre4,nota1,nota2,nota3,nota4}){
+    console.log(`El alumno es ${nombre1} y su nota es ${nota1}`);
+    console.log(`El alumno es ${nombre2} y su nota es ${nota2}`);
+    console.log(`El alumno es ${nombre3} y su nota es ${nota3}`);
+    console.log(`El alumno es ${nombre4} y su nota es ${nota4}`); 
+}
+printDetails(programacion2);
+
+
+//Function document.querySelector
+
+function myFunction() {
+  document.querySelector("p").style.backgroundColor = "red"; 
+  document.querySelector("p.nota1").style.backgroundColor = "green";
+  document.querySelector(".Nota2").style.backgroundColor = "blue";
+}
+
+console.log ("%cUniversidad" + " "+ "%cMariano"+ " " + "%cGalvez", "color:red;", "color:green;", "color:blue;")
+
+</script>
+     </body>
+</html>
